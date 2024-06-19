@@ -3,9 +3,6 @@ Make test files
 
 Create a tree of random files for testing.
 
-Download a [binary from github](https://github.com/ncw/make_test_files/releases/latest)
-or build from source (see later).
-
 Usage
 =====
 
@@ -25,8 +22,10 @@ Options:
     	Average number of files per directory (default 10)
   -loop
     	Loop forever
+  -no-dirs
+        Do not create subdirectores
   -max-depth int
-    	Maximum depth of directory heirachy (default 10)
+    	Maximum depth of directory hierachy (default 10)
   -max-name-length int
     	Maximum size of files to create (default 12)
   -max-size int
@@ -45,37 +44,14 @@ Options:
   -z	Fill files with zeroes instead of random data
 ```
 
-Build
-=====
-
-You'll need go installed, then 
-
-    go get github.com/ncw/make_test_files
-
-and this will build the binary in `$GOPATH/bin`.  You can then modify
-the source and submit patches.
-
 License
 =======
 
 This is free software under the terms of the MIT license (check the
 COPYING file included in this package).
 
-Contact and support
-===================
-
-The project website is at:
-
-- https://github.com/ncw/make_test_files
-
-There you can file bug reports, ask for help or contribute patches.
-
 Authors
 =======
 
 - Nick Craig-Wood <nick@craig-wood.com>
-
-Contributors
-------------
-
-- Your name goes here!
+- John O'Reilly
